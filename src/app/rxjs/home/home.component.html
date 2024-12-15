@@ -1,0 +1,7 @@
+<div class="container text-center p-5">
+    <div class="row">
+        @for (item of listItems; track item) {
+            <div class="col-md-2 bg-light border p-3 m-2 items" (click)="tapOnItem(item)">{{item?.label}}</div>
+          }
+    </div>
+  </div>
