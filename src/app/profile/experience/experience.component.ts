@@ -1,4 +1,5 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
+declare var WOW: any;
 
 @Component({
   selector: 'app-experience',
@@ -7,6 +8,9 @@ import { Component } from '@angular/core';
   templateUrl: './experience.component.html',
   styleUrl: './experience.component.scss'
 })
-export class ExperienceComponent {
+export class ExperienceComponent implements OnInit{
+  ngOnInit(): void {
+    new WOW().init(); // Initialize WOW.js for animations
+  }
 
 }

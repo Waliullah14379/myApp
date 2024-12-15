@@ -1,4 +1,5 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
+declare var WOW: any;
 
 @Component({
   selector: 'app-achievements',
@@ -7,6 +8,9 @@ import { Component } from '@angular/core';
   templateUrl: './achievements.component.html',
   styleUrl: './achievements.component.scss'
 })
-export class AchievementsComponent {
+export class AchievementsComponent implements OnInit{
+  ngOnInit(): void {
+    new WOW.WOW().init();  // Initialize WOW.js
+  }
 
 }

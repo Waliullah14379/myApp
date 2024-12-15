@@ -1,0 +1,107 @@
+/* projects.component.css */
+
+/* Card image transition effect */
+.card-img-top {
+    transition: transform 0.3s ease-in-out;
+  }
+  
+  .card-img-top:hover {
+    transform: scale(1.05);
+  }
+  
+  /* Card body background color change on hover */
+  .card-body {
+    background-color: #f8f9fa;
+    transition: background-color 0.3s ease;
+  }
+  
+  .card-body:hover {
+    background-color: #e9ecef;
+  }
+  
+  /* Button hover effect */
+  .btn-primary, .btn-warning, .btn-success, .btn-danger, .btn-info {
+    transition: background-color 0.3s ease;
+  }
+  
+  .btn-primary:hover, .btn-warning:hover, .btn-success:hover, .btn-danger:hover, .btn-info:hover {
+    background-color: #0056b3;
+  }
+  
+  .card-title {
+    font-size: 1.25rem;
+    font-weight: 600;
+    color: #333;
+  }
+  
+  .card-body {
+    padding: 2rem;
+    text-align: left;
+  }
+  
+  .card-body p {
+    font-size: 1rem;
+    color: #555;
+  }
+  
+  .card-body ul {
+    list-style-type: disc;
+    padding-left: 20px;
+  }
+  
+  .card-body ul li {
+    font-size: 1rem;
+    color: #555;
+  }
+  
+  /* Animate fadeIn on scroll */
+  .wow {
+    visibility: hidden;
+  }
+  
+  /* Fade-in animation effects */
+  .wow.fadeInLeft {
+    animation-name: fadeInLeft;
+  }
+  
+  .wow.fadeInUp {
+    animation-name: fadeInUp;
+  }
+  
+  .wow.fadeInRight {
+    animation-name: fadeInRight;
+  }
+  
+  @keyframes fadeInLeft {
+    from {
+      opacity: 0;
+      transform: translateX(-100%);
+    }
+    to {
+      opacity: 1;
+      transform: translateX(0);
+    }
+  }
+  
+  @keyframes fadeInUp {
+    from {
+      opacity: 0;
+      transform: translateY(100%);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  @keyframes fadeInRight {
+    from {
+      opacity: 0;
+      transform: translateX(100%);
+    }
+    to {
+      opacity: 1;
+      transform: translateX(0);
+    }
+  }
+  
