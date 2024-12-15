@@ -1,0 +1,67 @@
+<!-- profile.component.html -->
+<div class="container py-5">
+    <div class="row justify-content-center">
+      <div class="col-lg-8 col-md-10 col-sm-12">
+        <!-- Profile Card -->
+        <div class="card shadow-lg border-light rounded-3">
+          <div class="row g-0">
+            <!-- Profile Image Section -->
+            <div class="col-md-4 text-center p-4">
+              <img src="../../../assets/Screenshot 2024-11-17 163831.png" alt="Profile Image" class="img-fluid rounded-circle border border-5 border-primary mb-3">
+            </div>
+  
+            <!-- Profile Info Section -->
+            <div class="col-md-8">
+              <div class="card-body">
+                <h2 class="card-title text-primary">{{data?.name}}</h2>
+                <p class="card-text text-muted">{{data?.profileDescription}}</p>
+                <hr class="my-3">
+                <div class="mb-3">
+                  <strong>Email: </strong><span>{{data?.email}}</span>
+                </div>
+                <div class="mb-3">
+                  <strong>Mobile: </strong><span>{{data?.mobile}}</span>
+                </div>
+                <div class="mb-3">
+                  <strong>Address: </strong><span>{{data?.address}}</span>
+                </div>
+                <div class="mb-3">
+                  <strong>Gender: </strong><span>{{data?.gender}}</span>
+                </div>
+                <div class="mb-3">
+                  <strong>D.O.B: </strong><span>{{data?.dob}}</span>
+                </div>
+                <div class="mb-3">
+                  <strong>Nationality: </strong><span>{{data?.nationality}}</span>
+                </div>
+  
+                <!-- Social Media Links -->
+                <div class="mb-3">
+                  <strong>Social Links: </strong>
+                  <div class="social-links mt-3">
+                    <a href="https://www.linkedin.com/in/md-waliullah-b19900209/" target="_blank" class="mx-2">
+                      <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/0e/LinkedIn_Logo_2013.svg/1200px-LinkedIn_Logo_2013.svg" alt="LinkedIn" class="social-icon">
+                    </a>
+                    <a href="mailto:waliullahr14379@gmail.com" target="_blank" class="mx-2">
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/5/53/Google_%22G%22_Logo.svg" alt="Google" class="social-icon">
+                    </a>
+                    <a href="https://www.instagram.com/waliullah_9/profilecard/?igsh=dmQ0dXRydzJ1dms0" target="_blank" class="mx-2">
+                      <img src="https://upload.wikimedia.org/wikipedia/commons/a/a5/Instagram_icon.png" alt="Instagram" class="social-icon">
+                    </a>
+                  </div>
+                </div>
+  
+                <!-- Action Buttons -->
+                <div class="d-flex justify-content-start">
+                  <button class="btn btn-primary me-2" (click)="navigateTo('projects')">Projects</button>
+                  <button class="btn btn-success me-2" (click)="navigateTo('experience')">Experience</button>
+                  <button class="btn btn-warning" (click)="navigateTo('achievements')">Achievements</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  

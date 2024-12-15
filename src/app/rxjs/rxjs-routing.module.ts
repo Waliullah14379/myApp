@@ -5,8 +5,6 @@ import { HomeComponent } from './home/home.component';
 
 const routes: Routes = [
   {path:'promices', component:PromicesComponent},
-  // {path:'',component:HomeComponent},
-  // {path:'**', redirectTo:'home'},
   {path:'home',component:HomeComponent}
 ];
 
