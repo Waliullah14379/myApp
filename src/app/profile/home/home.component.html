@@ -34,6 +34,12 @@
                 <div class="mb-3">
                   <strong>Nationality: </strong><span>{{data?.nationality}}</span>
                 </div>
+                <div class="mb-3">
+                  <strong>Technical Skills: </strong>
+                  @for (item of data?.skills; track $index) {
+                      <span class="badge bg-primary m-1">{{item}}</span>
+                  }
+                </div>
   
                 <!-- Social Media Links -->
                 <div class="mb-3 d-flex">
