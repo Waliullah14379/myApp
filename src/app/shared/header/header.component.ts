@@ -12,7 +12,7 @@ export class HeaderComponent {
 
   constructor(private router: Router) {}
 
-  route() {
-    this.router.navigate([`/profile/home`]);
+  route(route:any) {
+    this.router.navigate([route]);
   }
 }

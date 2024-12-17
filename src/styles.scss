@@ -1,1 +1,36 @@
 /* You can add global styles to this file, and also import other style files */
+
+
+.pointer {
+    cursor: pointer !important;
+}
+.card {
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+  .card-header {
+    background-color: #343a40;
+    color: white;
+    font-weight: bold;
+  }
+  .card-body {
+    padding: 20px;
+  }
+  pre {
+    background-color: #f1f1f1;
+    padding: 15px;
+    border-radius: 5px;
+    overflow-x: auto;
+  }
+  .example-card {
+    background-color: #ffffff;
+    border: 1px solid #ddd;
+    transition: transform 0.3s;
+  }
+  .example-card:hover {
+    transform: scale(1.05);
+  }
+  .code-card {
+    background-color: #f8f9fa;
+  }
+  

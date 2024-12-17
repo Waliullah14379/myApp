@@ -1,0 +1,61 @@
+<div class="container py-5">
+    <div class="row">
+        <!-- Card 1: Example 1 -->
+        <div class="col-md-6 mb-4">
+            <div class="card example-card">
+                <div class="card-header">
+                    Example 1: Image Gallery
+                </div>
+                <div class="card-body">
+                    <h5 class="card-title">Functional Example: Image Gallery</h5>
+                    <p class="card-text">Here is an example of a simple image gallery functionality.</p>
+                    <div class="row">
+                        <div class="col-md-4">
+                            <button #addBtn class="btn btn-primary">Add Data</button>
+                        </div>
+                        <div class="col-md-4 border border-primary">
+                            <ul id="elContainer"></ul>
+                        </div>
+                        <div class="col-md-4">
+                            <img src="https://via.placeholder.com/150" class="img-fluid rounded" alt="Image 3">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Card 2: Example 2 -->
+        <div class="col-md-6 mb-4">
+            <div class="card example-card">
+                <div class="card-header">
+                    Example 2: Button Interaction
+                </div>
+                <div class="card-body">
+                    <h5 class="card-title">Functional Example: Image Gallery</h5>
+                    <p class="card-text">Here is an example of a simple image gallery functionality.</p>
+                    <div class="row">
+                        <div class="col-md-4">
+                            <img src="https://via.placeholder.com/150" class="img-fluid rounded" alt="Image 1">
+                        </div>
+                        <div class="col-md-4">
+                            <img src="https://via.placeholder.com/150" class="img-fluid rounded" alt="Image 2">
+                        </div>
+                        <div class="col-md-4">
+                            <img src="https://via.placeholder.com/150" class="img-fluid rounded" alt="Image 3">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Card 3: HTML Code -->
+        <div class="col-md-6 mb-4">
+            <code-snip [data]="htmlSnip" />
+        </div>
+
+        <!-- Card 4: TypeScript Code -->
+        <div class="col-md-6 mb-4">
+            <code-snip [data]="typescriptSnip" />
+        </div>
+    </div>
+</div>
